@@ -1,0 +1,39 @@
+import java.util.Random;
+
+public class teleport extends Animal
+{
+     random rand = new Random();
+     
+     int x1 = 0;
+     int x2 = 0;
+     int y = 0
+          
+          void teleBunny()
+     {
+          x1= rand.nextInt(500);
+          y = rand.nextInt(1000);
+          
+          if (health > 1)
+          {
+               System.out.println(super.name + "move to " + x1 + " , " + y);
+          }
+          else
+          {
+               System.out.println("Sorry" + super.name + " is dead");
+          }
+          
+          void teleDuck
+          {
+               x2 = (int)(Math.random()*500 + 500);
+               y = rand.nextInt(1000);
+               
+               if (health > 1)
+          {
+               System.out.println(super.name + "move to " + x2 + " , " + y);
+          }
+          else
+          {
+               System.out.println("Sorry" + super.name + " is dead");
+          }
+     }
+}
