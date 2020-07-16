@@ -24,7 +24,7 @@ public class teleport extends Animal
           
           void teleDuck
           {
-               x2 = (int)(Math.random()*500 + 500);
+               x2 = rand.nextInt((500)+500);
                y = rand.nextInt(1000);
                
                if (health > 1)
