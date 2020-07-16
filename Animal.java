@@ -2,12 +2,22 @@
  * Author: Young Lim Ko Park (T00051136)
  */
 
-public abstract class Animal
+interface teleport
+{
+
+    void getPosition();
+    
+}
+
+
+public abstract class Animal implements teleport
 {
      protected String name;
      protected String primaryColor;
      protected int health;
      protected static int count = 0;
+     protected int xcor=6;
+     protected int ycor=4;
      
      public Animal(String name, String color)
      {
@@ -61,6 +71,7 @@ public abstract class Animal
                System.out.println(name + " got hit and now has " + health + " health left");
      }  
      
+     @Override
      public String toString()
      {
           return (name + " is " + primaryColor);
@@ -68,4 +79,19 @@ public abstract class Animal
      
      
      
+     public int getXcor()
+     {
+         return xcor;
+     }
+     
+     public int getYcor()
+     {
+         return ycor;
+     }
+     
+     @Override
+     public void getPosition()
+     {
+         System.out.println("The x-coordinate is " + getXcor() + " and the y-coordinate is " + getYcor());
+     }
 }
