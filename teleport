@@ -15,11 +15,11 @@ public class teleport extends Animal
           
           if (health > 1)
           {
-               System.out.println(super.name + "move to " + x1 + " , " + y);
+               System.out.println("The Bunny move to " + x1 + " , " + y);
           }
           else
           {
-               System.out.println("Sorry" + super.name + " is dead");
+               System.out.println("Sorry, the bunny is dead");
           }
           
           void teleDuck
@@ -29,11 +29,11 @@ public class teleport extends Animal
                
                if (health > 1)
           {
-               System.out.println(super.name + "move to " + x2 + " , " + y);
+               System.out.println("The Duck moves to " + x2 + " , " + y);
           }
           else
           {
-               System.out.println("Sorry" + super.name + " is dead");
+               System.out.println("Sorry the duck is dead");
           }
      }
 }
