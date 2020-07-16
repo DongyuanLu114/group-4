@@ -6,16 +6,17 @@ public class teleport extends Animal
      
      int x1 = 0;
      int x2 = 0;
-     int y = 0
-          
-          void teleBunny()
+     int y1 = 0;
+     int y2 = 0;
+     
+     void teleBunny()
      {
           x1= rand.nextInt(500);
-          y = rand.nextInt(1000);
+          y1 = rand.nextInt(1000);
           
           if (health > 1)
           {
-               System.out.println("The Bunny move to " + x1 + " , " + y);
+               System.out.println("The Bunny move to " + x1 + " , " + y1);
           }
           else
           {
@@ -25,15 +26,16 @@ public class teleport extends Animal
           void teleDuck
           {
                x2 = rand.nextInt((500)+500);
-               y = rand.nextInt(1000);
+               y2 = rand.nextInt(1000);
                
                if (health > 1)
-          {
-               System.out.println("The Duck moves to " + x2 + " , " + y);
-          }
-          else
-          {
-               System.out.println("Sorry the duck is dead");
+               {
+                    System.out.println("The Duck moves to " + x2 + " , " + y2);
+               }
+               else
+               {
+                    System.out.println("Sorry the duck is dead");
+               }
           }
      }
 }
