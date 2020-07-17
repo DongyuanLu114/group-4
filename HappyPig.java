@@ -1,5 +1,5 @@
 /*java.HappyPig
- * Author: Young Lim Ko Park (T00051136)
+ * Group 4
  */
 
 public class HappyPig extends Animal
@@ -12,6 +12,11 @@ public class HappyPig extends Animal
      public void roll()
      {
           System.out.println(name + " is rolling");
+     }
+     
+       public void sleep()
+     {
+          System.out.println(name + " is sleeping");
      }
      
      public void makeSound()
