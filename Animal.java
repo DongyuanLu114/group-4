@@ -1,12 +1,12 @@
 /*java.Animal
- * Author: Young Lim Ko Park (T00051136)
+ *Group 4
  */
 
 interface teleport
 {
-
-    void getPosition();
-    
+     
+     void getPosition();
+     
 }
 
 
@@ -28,11 +28,6 @@ public abstract class Animal implements teleport
      }
      
      public abstract void makeSound();
-     
-     public void sleep()
-     {
-          System.out.println(name + " is Z z z...");
-     }
      
      public String getName()
      {
@@ -81,17 +76,17 @@ public abstract class Animal implements teleport
      
      public int getXcor()
      {
-         return xcor;
+          return xcor;
      }
      
      public int getYcor()
      {
-         return ycor;
+          return ycor;
      }
      
      @Override
      public void getPosition()
      {
-         System.out.println("The x-coordinate is " + getXcor() + " and the y-coordinate is " + getYcor());
+          System.out.println("The x-coordinate is " + getXcor() + " and the y-coordinate is " + getYcor());
      }
 }
