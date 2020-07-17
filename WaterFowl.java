@@ -21,12 +21,14 @@ public abstract class WaterFowl extends Animal implements Attacker
           System.out.println(name + " is swimming");
      }
      
-       public void attack(Animal obj)
+     public void attack(Animal obj)
      {
           if (this.name.compareTo(obj.getName()) != 0 && this.health != 0)
           {
                System.out.println(this.name + " attacked " + obj.getName());
+               
                obj.hit(); 
+               
                if (obj.health == 0)
                {
                     this.killCount++;
@@ -41,5 +43,5 @@ public abstract class WaterFowl extends Animal implements Attacker
      public int getKillCount()
      {
           return killCount;
-     }
+     }  
 }
