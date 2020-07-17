@@ -11,7 +11,7 @@
 
           public void teleBunny()
           {
-               x1= rand.nextInt(500);
+               x1 = rand.nextInt(500);
                y1 = rand.nextInt(1000);
 
                if (health > 1)
