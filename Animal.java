@@ -20,8 +20,8 @@ public abstract class Animal implements teleport
      protected String primaryColor;
      protected int health;
      protected static int count = 0;
-     protected int xcor=6;
-     protected int ycor=4;
+     protected int xcor= 0;
+     protected int ycor= 0;
      
      public Animal(String name, String color)
      {
@@ -63,6 +63,7 @@ public abstract class Animal implements teleport
           if (health == 0)
           {               
                System.out.println(name + " is already dead");
+               //break;
           }
           else
           {
@@ -85,12 +86,12 @@ public abstract class Animal implements teleport
      
      public int getXcor()
      {
-          return xcor;
+          return x1;
      }
      
      public int getYcor()
      {
-          return ycor;
+          return y1;
      }
      
      @Override
@@ -120,19 +121,19 @@ public abstract class Animal implements teleport
                System.out.println("Sorry, the bunny is dead");
           }
      }
-     
-     public void teleDuck()
-     {
-          x2 = rand.nextInt((500)+500);
-          y2 = rand.nextInt(1000);
           
-          if (health > 1)
+          public void teleDuck()
           {
-               System.out.println("The Duck moves to " + x2 + " , " + y2);
+               x1 = rand.nextInt((500)+500);
+               y1 = rand.nextInt(1000);
+               
+               if (health > 1)
+               {
+                    System.out.println("The Duck moves to " + x1 + " , " + y1);
+               }
+               else
+               {
+                    System.out.println("Sorry the duck is dead");
+               }
           }
-          else
-          {
-               System.out.println("Sorry the duck is dead");
-          }
-     }
 }
