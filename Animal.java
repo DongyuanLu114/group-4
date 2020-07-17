@@ -86,12 +86,12 @@ public abstract class Animal implements teleport
      
      public int getXcor()
      {
-          return x2;
+          return x1;
      }
      
      public int getYcor()
      {
-          return y2;
+          return y1;
      }
      
      @Override
@@ -124,12 +124,12 @@ public abstract class Animal implements teleport
           
           public void teleDuck()
           {
-               x2 = rand.nextInt((500)+500);
-               y2 = rand.nextInt(1000);
+               x1 = rand.nextInt((500)+500);
+               y1 = rand.nextInt(1000);
                
                if (health > 1)
                {
-                    System.out.println("The Duck moves to " + x2 + " , " + y2);
+                    System.out.println("The Duck moves to " + x1 + " , " + y1);
                }
                else
                {
