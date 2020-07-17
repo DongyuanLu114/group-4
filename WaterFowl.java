@@ -1,10 +1,10 @@
 /*java.WaterFowl
- * Author: Young Lim Ko Park (T00051136)
+ * Group 4
  */
 
-public abstract class WaterFowl extends Animal
+public abstract class WaterFowl extends Animal implements Attacker
 {
-     protected boolean flying;
+     protected int killCount;
      
      public WaterFowl(String name, String color)
      {
@@ -21,8 +21,25 @@ public abstract class WaterFowl extends Animal
           System.out.println(name + " is swimming");
      }
      
-     public boolean isFlying()
+       public void attack(Animal obj)
      {
-          return flying;
+          if (this.name.compareTo(obj.getName()) != 0 && this.health != 0)
+          {
+               System.out.println(this.name + " attacked " + obj.getName());
+               obj.hit(); 
+               if (obj.health == 0)
+               {
+                    this.killCount++;
+               }
+          }
+          else
+          { 
+               System.out.println();
+          }
+     }
+     
+     public int getKillCount()
+     {
+          return killCount;
      }
 }
