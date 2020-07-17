@@ -6,6 +6,8 @@ interface teleport
 {
      
      void getPosition();
+     void teleBunny();
+     void teleDuck();
      
 }
 
