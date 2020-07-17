@@ -20,8 +20,8 @@ public abstract class Animal implements teleport
      protected String primaryColor;
      protected int health;
      protected static int count = 0;
-     protected int xcor=6;
-     protected int ycor=4;
+     protected int xcor= 0;
+     protected int ycor= 0;
      
      public Animal(String name, String color)
      {
@@ -86,12 +86,12 @@ public abstract class Animal implements teleport
      
      public int getXcor()
      {
-          return xcor;
+          return x2;
      }
      
      public int getYcor()
      {
-          return ycor;
+          return y2;
      }
      
      @Override
