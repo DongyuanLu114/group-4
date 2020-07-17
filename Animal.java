@@ -94,7 +94,7 @@ public abstract class Animal implements teleport
           System.out.println("The x-coordinate is " + getXcor() + " and the y-coordinate is " + getYcor());
      }
      
-     random rand = new Random();
+     Random rand = new Random();
 
           int x1 = 0;
           int x2 = 0;
