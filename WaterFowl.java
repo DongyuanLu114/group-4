@@ -4,7 +4,7 @@
 
 public abstract class WaterFowl extends Animal implements Attacker
 {
-     protected int killCount;
+     protected int killCount = 0;
      
      public WaterFowl(String name, String color)
      {
@@ -23,20 +23,22 @@ public abstract class WaterFowl extends Animal implements Attacker
      
      public void attack(Animal obj)
      {
-          if (this.name.compareTo(obj.getName()) != 0 && this.health != 0)
+          if (this.health != 0)
           {
-               System.out.println(this.name + " attacked " + obj.getName());
-               
-               obj.hit(); 
-               
-               if (obj.health == 0)
+               if (this.getClass() == obj.getClass())
                {
-                    this.killCount++;
+                    System.out.println("You cannot attact the same team");
                }
-          }
-          else
-          { 
-               System.out.println();
+               else 
+               {
+                    System.out.println(this.name + " attacked " + obj.getName());
+                    obj.hit(); 
+                    if (obj.health == 0)
+                    {
+                         this.killCount++;
+                         System.out.println(this.name + " earned 1 kill point");
+                    }  
+               }
           }
      }
      

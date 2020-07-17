@@ -9,9 +9,11 @@
  * @author Work PC
  */
 public class driver {
-    public static void main (String[] args)
-    {
-        HappyPig pig = new HappyPig("Bell","Red");
-        pig.getPosition();
-    }
+     public static void main (String[] args)
+     {
+          HappyPig pig = new HappyPig("Bell","Red");
+          pig.getPosition();
+         
+     }
+     
 }

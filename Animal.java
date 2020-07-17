@@ -63,7 +63,6 @@ public abstract class Animal implements teleport
           if (health == 0)
           {               
                System.out.println(name + " is already dead");
-               //break;
           }
           else
           {
@@ -121,19 +120,19 @@ public abstract class Animal implements teleport
                System.out.println("Sorry, the bunny is dead");
           }
      }
+     
+     public void teleDuck()
+     {
+          x2 = rand.nextInt((500)+500);
+          y2 = rand.nextInt(1000);
           
-          public void teleDuck()
+          if (health > 1)
           {
-               x2 = rand.nextInt((500)+500);
-               y2 = rand.nextInt(1000);
-               
-               if (health > 1)
-               {
-                    System.out.println("The Duck moves to " + x2 + " , " + y2);
-               }
-               else
-               {
-                    System.out.println("Sorry the duck is dead");
-               }
+               System.out.println("The Duck moves to " + x2 + " , " + y2);
           }
+          else
+          {
+               System.out.println("Sorry the duck is dead");
+          }
+     }
 }
