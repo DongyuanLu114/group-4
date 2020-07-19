@@ -46,8 +46,7 @@ public abstract class WaterFowl extends Animal implements Attacker
           }
      }
      
-     public int getKillCount()
-     {
-          return killCount;
-     }  
+     public void getKillCount() {
+          System.out.println(name + " has " + killCount + " kill(s)");
+     }
 }

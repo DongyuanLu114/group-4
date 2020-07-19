@@ -33,6 +33,22 @@ public class driver {
         duck.attack(bunny);
         bunny.teleBunny();
 
+        System.out.println("Testing the killcount method");
+        duck.getKillCount();
+
+
+        LoudGoose goose = new LoudGoose("Canada", "Black");
+        System.out.println("Testing the goose attacking");
+        goose.attack(duck);
+        duck.attack(goose);
+        goose.attack(duck);
+        goose.attack(duck);
+        goose.getKillCount();
+
+
+
+
+
 
     }
 }
