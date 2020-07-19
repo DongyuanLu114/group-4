@@ -41,7 +41,7 @@ public abstract class WaterFowl extends Animal implements Attacker
                }
                else
                {
-                    System.out.println("you cannot attack the dead");
+                    System.out.println(this.name + " cannot attack  the dead " + obj.getName());
                }
           }
      }
