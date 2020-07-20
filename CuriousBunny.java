@@ -1,5 +1,5 @@
 /*java.CuriousBunny
- * Author: Young Lim Ko Park (T00051136)
+ * Group 4
  */
 
 public class CuriousBunny extends Animal
