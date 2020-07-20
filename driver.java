@@ -11,42 +11,62 @@
 public class driver {
     public static void main (String[] args)
     {
-        
-
         CuriousBunny bunny = new CuriousBunny("Bugs", "Grey");
-
-        System.out.println("Testing the teleport on the Bunny");
-        bunny.teleBunny();
-        System.out.println("Testing the location beacon inside the bunny");
-        bunny.getPosition();
-
         AngryDuck duck = new AngryDuck("Donald", "White");
+        AngryDuck duck2 = new AngryDuck("Daffy", "Blue");
+        LoudGoose goose = new LoudGoose("Canada", "Black");
+        HappyPig pig = new HappyPig ("Wilbur", "Pink");
 
-        System.out.println("Testing the Teleport method of the duck");
-        duck.teleDuck();
-        System.out.println("Testing the The location beacon inside the duck");
-        duck.getPosition();
-        System.out.println("Testing the attack method");
-        duck.attack(bunny);
-        duck.attack(bunny);
-        duck.attack(bunny);
-        duck.attack(bunny);
+        
+        System.out.println("Testing the Teleporting and the location methods");
         bunny.teleBunny();
+        duck.teleDuck();
+        duck.getPosition();
+        bunny.getPosition();
+        System.out.println("");
 
-        System.out.println("Testing the killcount method");
+        bunny.teleBunny();
+        duck.teleDuck();
+        duck.getPosition();
+        bunny.getPosition();
+        System.out.println("");
+        
+        
+        System.out.println("Testing the attack methods for the animals:");
+        duck.attack(bunny);
+        duck.attack(pig);
+        duck.attack(bunny);
+        duck.attack(bunny);
+        duck.attack(bunny);
+
+        System.out.println("\nTrying to attack the same team:");
+        duck.attack(duck);
+        goose.attack(goose);
+
+        
+        System.out.println("");
+        goose.attack(duck);
+        goose.attack(duck);
+        goose.attack(duck);
+
+
+        System.out.println("\nTrying to teleport a bunny and the duck after dying:");
+        bunny.teleBunny();
+        duck.teleDuck();
+
+        System.out.println("\nTesting the killcount methods:");
+        goose.getKillCount();
         duck.getKillCount();
 
+        
 
-        LoudGoose goose = new LoudGoose("Canada", "Black");
-        System.out.println("Testing the goose attacking");
-        goose.attack(duck);
-        duck.attack(goose);
-        goose.attack(duck);
-        goose.attack(duck);
-        goose.getKillCount();
+        
 
 
 
+        
+
+       
 
 
 

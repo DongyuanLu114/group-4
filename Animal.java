@@ -118,7 +118,7 @@ public abstract class Animal implements teleport
           }
           else
           {
-               System.out.println("Sorry, the bunny is dead");
+               System.out.println("sorry, " + name + " is dead and cannot teleport");
           }
      }
           
@@ -133,7 +133,7 @@ public abstract class Animal implements teleport
                }
                else
                {
-                    System.out.println("Sorry the duck is dead");
+                    System.out.println("sorry, " + name + " is dead and cannot teleport");
                }
           }
 }
