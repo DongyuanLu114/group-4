@@ -42,7 +42,7 @@ public class driver {
         System.out.println("\nTrying to attack the same team:");
         duck.attack(duck);
         goose.attack(goose);
-
+        duck.attack(duck2);
         
         System.out.println("");
         goose.attack(duck);
