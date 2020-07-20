@@ -27,7 +27,7 @@ public abstract class WaterFowl extends Animal implements Attacker
           {
                if (this.getClass() == obj.getClass())
                {
-                    System.out.println(this.name + " cannot attack the same team, " + obj.getName());
+                    System.out.println(this.name + " cannot attack " + obj.getName());
                }
                else if ((this.getClass() != obj.getClass()) && (obj.health != 0))
                {
