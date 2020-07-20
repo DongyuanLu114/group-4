@@ -2,7 +2,7 @@
  * Group 4
  */
 
-public class Driver {
+public class driver {
      public static void main (String[] args)
      {
           CuriousBunny bunny = new CuriousBunny("Bugs", "Grey");
